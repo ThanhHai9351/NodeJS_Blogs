@@ -19,12 +19,12 @@
     "url": "https://github.com/ThanhHai9351/NodeJS_Blogs/issues"
   },
   "homepage": "https://github.com/ThanhHai9351/NodeJS_Blogs#readme",
-  "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-witdh 4 --write"
+    "lint-staged": {
+      "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-witdh 4 --write"
   },
-"husky":{
+"husky":{ 
   "hooks":{
-    "pre-commit":"lint-staged"
+    "pre-commit":  "lint-staged"
   }
 }
 ,
