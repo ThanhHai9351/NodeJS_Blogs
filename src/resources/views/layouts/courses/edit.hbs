@@ -1,0 +1,52 @@
+<div class='w-50 m-auto'>
+  <h3 class='text-center'>EDIT</h3>
+  <form
+    method='GET'
+    action='/courses/update'
+    class='row m-5 p-3'
+    style='border: solid 1px #cdcdcd;border-radius: 15px'
+    enctype='multipart/form-data'
+  >
+    <input
+      name='id'
+      type='hidden'
+      class='form-control'
+      placeholder='Enter name ...'
+      value='{{course.id}}'
+    />
+    <div class='col-md-6'>
+      <label class='form-label'>Name</label>
+      <input
+        name='name'
+        type='text'
+        class='form-control'
+        placeholder='Enter name ...'
+        value='{{course.name}}'
+      />
+    </div>
+    <div class='col-md-6'>
+      <label class='form-label'>Description</label>
+      <input
+        name='description'
+        type='text'
+        class='form-control'
+        placeholder='Enter description ...'
+        value='{{course.description}}'
+      />
+    </div>
+    <div class='col-md-6'>
+      <label class='form-label'>Image</label>
+      <input
+        name='image'
+        id='image'
+        type='text'
+        class='form-control'
+        placeholder='Enter imageUrl ...'
+        value='{{course.image}}'
+      />
+    </div>
+    <div class='text-center'>
+      <button type='submit' class='mt-4 w-10 btn btn-primary'>Edit</button>
+    </div>
+  </form>
+</div>
